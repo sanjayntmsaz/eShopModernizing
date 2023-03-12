@@ -8,7 +8,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 if ([int](Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full"  -Name Release).Release -lt 393295) {
-	throw "Your version of .NET framework is not supported for this script, needs at least 4.6+"
+	throw "Your version of .NET framework is not supported    test for this script, needs at least 4.6+"
 }
 function GenerateCerts {
 	$splat = @{
